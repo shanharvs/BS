@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakpoint And Scaffolding</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="breakpoint.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakpoints and Scaffolding</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="breakpoint.css">
 </head>
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-        <div class="container mb-5 mt-5">
-            <h1 class="text-center">Responsive Breakpoint</h1>
-            <p class="lead text-center">
-            This is a simple example to demonstrate how Bootstrap's breakpoints work. Resize the window to see the effect.
-            </p>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+  <div class="container">
+    <h1 class="text-center">Responsive Breakpoints</h1>
+    <p>Try resizing the window to view the various breakpoints.</p>
+  </div>
+  
+  
+  <section class="1st Row">
+  <div class="container text-center bg-light">
+    <div class="row">
+    <header class="col-md-12 text-center">HEADER</header>
+    </div>
+</section>
+
+<section class="2nd Row">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 bg-warning">1/3</div>
+      <div class="col-md-4 bg-success text-white">1/3</div>
+      <div class="col-md-4 bg-success text-white">1/3</div>
+    </div>
+</section>
+
+<section class="3rd Row">
+    <div class="row">
+      <div class="col-md-4 bg-info">1/3</div>
+      <div class="col-md-8 bg-danger text-white">2/3</div>
+    </div>
+</section>
+
+
+<section class="4th Row">
+    <div class="row">
+      <div class="col-md-3 bg-warning">1/4</div>
+      <div class="col-md-6 bg-success text-white">1/2</div>
+      <div class="col-md-3 bg-warning">1/4</div>
+    </div>
+</section>
+
+
+<section class="5th Row">
+    <div class="row">
+      <div class="col-md-3 bg-success text-white">1/4</div>
+      <div class="col-md-3 bg-danger text-white">1/4</div>
+      <div class="col-md-3 bg-warning">1/4</div>
+      <div class="col-md-3 bg-info">1/4</div>
+    </div>
+</section>
+
+
+<section class="6th Row">
+    <div class="row">
+      <div class="col-md-3 bg-success text-white">1/4</div>
+      <div class="col-md-6 bg-danger">
+        <div class="row">
+          <div class="col-md-6 bg-info">1/4</div>
+          <div class="col-md-6 bg-info">1/4</div>
         </div>
-        
-        <div class="container bg-light border border-black mt-3 text-center">
-            <div class="row">
-                <header class="col-md-12 pt-3 pb-3">HEADER</header>
-            </div>
-            <!-- 2nd row -->
-            <div class="row">
-                <div class="col-md-offset-4 col-md-4 bg-warning">1/3 Offset</div>
-                <div class="col-md-4 bg-success text-white">1/3</div>
-                <div class="col-md-4 bg-success text-white">1/3</div>
-            </div>
-            <!--3rd row-->
-            <div class="row">
-                <div class="col-md-4 bg-info p-4">1/3</div>
-                <div class="col-md-8 bg-danger p-4 text-white">2/3</div>
-            </div>
-            <!--4th row-->
-            <div class="row">
-                <div class="col-md-3 bg-warning">1/4</div>
-                <div class="col-md-6 bg-success text-white">1/2</div>
-                <div class="col-md-3 bg-warning">1/4</div>
-            </div>
-            <!--5th row-->
-            <div class="row">
-                <div class="col-md-3 bg-success text-white">1/4</div>
-                <div class="col-md-3 bg-danger text-white">1/4</div>
-                <div class="col-md-3 bg-warning">1/4</div>
-                <div class="col-md-3 bg-info ">1/4</div>
-            </div>
-            <!--6th row-->
-            <div class="row">
-                <div class="col-md-3 bg-success text-white">1/4</div>
-                <div class="col-md-6 bg-danger">
-                    <div class="row">
-                        <div class="col-md-6 bg-info">1/4</div>
-                        <div class="col-md-6 bg-info">1/4</div>
-                    </div>
-                </div>      
-                    <div class="col-md-3 bg-warning">1/4</div>
-            </div>
-            <!--7th row-->
-            <footer class="row">
-                <div class="col-md-2 bg-success text-white">1/6</div>
-                <div class="col-md-7 bg-danger text-white">7/12</div>
-                <div class="col-md-3 bg-warning">1/4</div>
-            </footer>
-        </div>
-    </body>
+      </div>
+      <div class="col-md-3 bg-warning">1/4</div>
+      </div>
+</section>
+
+
+<section class="7th Row">
+      <footer class="row">
+        <div class="col-md-2 bg-success text-white">1/6</div>
+        <div class="col-md-7 bg-danger text-white">7/12</div>
+        <div class="col-md-3 bg-warning">1/4</div>
+      </footer>
+</section>
+  </div>
+</body>
 </html>
